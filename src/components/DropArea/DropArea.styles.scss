@@ -1,0 +1,21 @@
+@import '../../globalstyles.scss';
+
+.dropAreaContainer{
+    height: 90vh;
+    background-color: $drop_area_container;
+    margin: 1rem;
+    overflow-y: auto;
+
+    // Custom Scrollbar styling
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+    background: $scroll-bar-color;
+    border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+    background: $scroll-bar-hovor-color;
+    border-radius: 10px;
+    }
+}

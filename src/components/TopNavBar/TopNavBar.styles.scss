@@ -1,0 +1,48 @@
+@import '../../globalstyles.scss';
+
+.topNavbar{
+    display: flex;
+    justify-content:space-between;
+    .header-1{
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+    .header-2{
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+    .custom-btn{
+        padding: 0.2rem .8rem 0.2rem .8rem;
+        background-color: r$custom-button-color;
+        color: $custom-button-text-color;
+        border: $custom-button-border;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        gap: .1rem;
+    }
+    .active{
+        background-color: $custom-button-active;
+        color: $custom-button-active-text-color;
+    }
+    .icons{
+        fill: $icon-fill-color;
+    }
+    .custom-input{
+        border: none;
+        border-bottom: $custom-button-border;
+        &:focus{
+            outline: none;
+        }
+    }
+    .search-icon{
+        position: absolute;
+        right: 3%;
+        bottom:7%;
+    }
+    .pagination{
+        font-size: small;
+    }
+}
